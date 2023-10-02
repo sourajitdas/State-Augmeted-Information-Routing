@@ -45,7 +45,7 @@ def create_network(N):
     # plt.show()
 
     A = nx.to_numpy_array(G, weight='weight')
-    A[A != 0] = 1
+    A[A != 0] = 10
     A[A == 0] = 1e-10
 
     return A
