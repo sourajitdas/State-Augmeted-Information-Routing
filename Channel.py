@@ -34,10 +34,6 @@ def create_network(N):
         for j in sorted_nodes[1:k+1]:
             G.add_edge(i, j, weight=distances[i, j])
 
-    # Scale edge weights by 10
-    for (u, v, d) in G.edges(data=True):
-        d['weight'] *= np.random.randint(10,101)
-
     # # Visualize the graph
     # pos = nx.get_node_attributes(G, 'pos')
     # nx.draw(G, pos, with_labels=True)
