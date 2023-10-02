@@ -83,10 +83,6 @@ def create_network(N):
 #         for j in sorted_nodes[1:k+1]:
 #             G.add_edge(i, j, weight=distances[i, j])
 #
-#     # Scale edge weights by 10
-#     for (u, v, d) in G.edges(data=True):
-#         d['weight'] *= np.random.randint(10,11)
-#
 #     A = nx.to_numpy_array(G, weight='weight')
 #     A[A != 0] = 10
 #     A[A == 0] = 1e-10
