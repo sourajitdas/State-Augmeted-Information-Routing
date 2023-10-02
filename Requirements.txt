@@ -1,0 +1,7 @@
+numpy
+scipy
+networkx
+torch
+tqdm
+matplotlib
+torch-goemetric
