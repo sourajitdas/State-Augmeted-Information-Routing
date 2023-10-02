@@ -43,6 +43,7 @@ def create_network(N):
     A = nx.to_numpy_array(G, weight='weight')
     A[A != 0] = 10
     A[A == 0] = 1e-10
+    np.fill_diagonal(A, 0)
 
     return A
 
